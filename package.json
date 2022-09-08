@@ -2,26 +2,33 @@
   "name": "parcel-app-template",
   "version": "1.0.0",
   "description": "Template for simple vanilla html, css and javascript apps bundled with parcel",
-  "main": "src/index.html",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "parcel src/index/html -p 7084 --open  --host 0.0.0.0",
-    "build": "parcel build src/index.html --dist-dir dist"
+    "dev": "parcel src/index.html -p 7084 --open",
+    "build": "parcel build src/index.html --dist-dir dist",
+    "clean": "rmdir /s /q .parcel-cache"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lekandev/parcel-app-template.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "parcel",
+    "app",
+    "template"
+  ],
+  "author": "Mohammed Kabir Hussaini (lekandev)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lekandev/parcel-app-template/issues"
   },
   "homepage": "https://github.com/lekandev/parcel-app-template#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "2.6.2",
     "parcel": "^2.6.2"
   },
   "dependencies": {
-    "gsap": "^3.10.4"
+    "gsap": "^3.10.4",
+    "locomotive-scroll": "^4.1.4"
   }
 }
