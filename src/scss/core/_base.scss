@@ -1,0 +1,15 @@
+html {
+  // font-size: 16px;
+
+  font-size: calc(100vw / 1024 * 10);
+
+  @include media("<=tablet") {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @include media("<=phone") {
+    font-size: calc(100vw / 320 * 10);
+  }
+
+  scroll-behavior: smooth;
+}
