@@ -2,7 +2,7 @@
   "name": "parcel-app-template",
   "version": "1.0.0",
   "description": "Template for simple vanilla html, css and javascript apps bundled with parcel",
-  "main": "src/index.js",
+  "source": "src/index.js",
   "scripts": {
     "dev": "parcel src/index.html -p 7084 --open",
     "build": "parcel build src/index.html --dist-dir dist",
